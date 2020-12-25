@@ -1,0 +1,13 @@
+version: "3.3"
+
+services:
+    haproxy:
+        build: .
+        image: eftr/haproxy
+        ports:
+         - "8404:8404"
+         - "443:443"
+        volumes:
+         - ./haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg
+         - ./site.pem:/etc/ssl/certs/site.pem
+        restart: always
