@@ -7,3 +7,4 @@ HAProxy в докере запустить на другой машине, т.к
 2) Запустить ./run.sh
 3) Проверка: curl --insecure https://api.push.apple.com/
 
+CHANGE
